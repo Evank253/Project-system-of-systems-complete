@@ -1,0 +1,21 @@
+{
+  "principles": [
+    "Authority belongs to humans. A system's ability to perform an action is capability, never authority.",
+    "The public application must not imply that an AI system holds authority merely because it can act.",
+    "Every authority decision is auditable: delegation, authorization, and revocation leave records.",
+    "Authority boundaries are enforced outside the application, by the KSI governance system and human operators."
+  ],
+  "levels": [
+    { "level": "H0", "placeholder": true, "definition": "[AUTHORITATIVE_DEFINITION_PENDING] H0 will be defined by the authoritative governance documentation.", "display_name": "H0" },
+    { "level": "H1", "placeholder": true, "definition": "[AUTHORITATIVE_DEFINITION_PENDING] H1 will be defined by the authoritative governance documentation.", "display_name": "H1" },
+    { "level": "H2", "placeholder": true, "definition": "[AUTHORITATIVE_DEFINITION_PENDING] H2 will be defined by the authoritative governance documentation.", "display_name": "H2" },
+    { "level": "H3", "placeholder": true, "definition": "[AUTHORITATIVE_DEFINITION_PENDING] H3 (highest human sign-off) will be defined by the authoritative governance documentation.", "display_name": "H3" }
+  ],
+  "lifecycle": {
+    "delegation": { "status": "INTEGRATION_REQUIRED", "note": "Interface only. No delegation records exist in this build." },
+    "authorization": { "status": "INTEGRATION_REQUIRED", "note": "Interface only. No privileged operations exist in this build." },
+    "revocation": { "status": "INTEGRATION_REQUIRED", "note": "Interface only. No revocation records exist in this build." },
+    "audit_trail": { "status": "IMPLEMENTED", "note": "Execution-level audit log stored by this application and exposed below. Basic logging; no tamper-evidence yet." }
+  },
+  "enforcement_status": "INTEGRATION_REQUIRED — enforcement will be provided by KSI and human operators, not by this public layer."
+}

@@ -1,0 +1,90 @@
+{
+  "doctrine_id": "EIL-CONSTITUTION",
+  "version": "1.0.0",
+  "frozen": true,
+  "source": "Owner-provided frozen doctrine (external architecture work). Stored verbatim. No rules invented or inferred.",
+  "core_purpose": "EIL (Emergent Intelligence Layer) is engineered to permit intelligence and capability to expand without permitting intelligence or capability to become an independent source of authority.",
+  "core_principle": "MAKE INTELLIGENCE EXTENSIBLE. MAKE AUTHORITY CONSTITUTIONAL.",
+  "fundamental_invariant": "No increase in intelligence, capability, composition, knowledge, evidence, verification, or qualification shall, by itself, create, inherit, expand, or transfer authority.",
+  "constitutional_invariants": [
+    { "id": "EIL-01", "name": "NON-TRANSITIVE AUTHORITY", "rule": "No increase in intelligence, capability, composition, knowledge, evidence, verification, or qualification shall, by itself, create, inherit, expand, or transfer authority." },
+    { "id": "EIL-02", "name": "VALID DELEGATION", "rule": "Machine authority may change only through an explicitly permitted constitutional delegation or transition." },
+    { "id": "EIL-03", "name": "NO SELF-ELEVATION", "rule": "EIL and its constituent systems cannot manufacture, approve, or confer authority upon themselves." },
+    { "id": "EIL-04", "name": "EVIDENCE DOES NOT AUTHORIZE", "rule": "Evidence, verification, and qualification establish claims about capability; they do not independently grant permission to exercise that capability." },
+    { "id": "EIL-05", "name": "RESERVED HUMAN AUTHORITY", "rule": "Authority designated as reserved remains outside machine delegation unless the governing constitution explicitly permits otherwise." }
+  ],
+  "state_domain_separation": "CAPABILITY_STATE ≠ EVIDENCE_STATE ≠ VERIFICATION_STATE ≠ QUALIFICATION_STATE ≠ AUTHORITY_STATE. A transition in one state domain may trigger evaluation in another domain, but MUST NOT implicitly mutate AUTHORITY_STATE.",
+  "authority_trajectory": {
+    "authority": ["Reserved powers", "Constitution", "Governance", "Qualification", "Valid delegation", "Bounded machine authority"],
+    "intelligence_independent": ["Capability", "Knowledge", "Reasoning", "Discovery", "Composition", "Planning", "Learning"],
+    "note": "The intelligence trajectory may increase without automatically increasing authority."
+  },
+  "authoritative_authority_transition": {
+    "path": ["REQUESTED_AUTHORITY_CHANGE", "CONSTITUTIONAL_POLICY", "VALID_DELEGATION_VERIFICATION", "DENY OR AUTHORITY_TRANSITION", "AUDIT_RECORD"],
+    "record_fields": ["requester", "requested", "transition", "constitutional_rule", "prerequisite_evidence", "authorized_approver", "anti_forgery_validation", "actual_state_mutation", "audit_record"]
+  },
+  "core_assurance_requirement": {
+    "id": "EIL-ASSURE-001",
+    "rule": "An EIL capability-state transition MUST NOT produce an authority-state transition unless the authority transition is independently authorized through a valid constitutional delegation.",
+    "machine_testable_invariant": "authority_after == authority_before unless valid_constitutional_delegation == TRUE"
+  },
+  "untrusted_inputs": {
+    "fields": ["verified", "human_approved", "policy_allows", "qualified", "authorize"],
+    "rule": "MUST be treated as untrusted claims when supplied by a caller, model, router, agent, API payload, serialized state, database record, or tool. These fields cannot independently establish authority."
+  },
+  "forbidden_authority_paths": [
+    "confidence → authority",
+    "capability → authority",
+    "composition → authority",
+    "consensus → authority",
+    "evidence → authority",
+    "verification → authority",
+    "qualification → authority",
+    "successful execution → authority",
+    "model assertion → authority",
+    "router assertion → authority",
+    "agent authority claim → authority",
+    "serialization/API/database mutation → authority",
+    "self-authorization → authority",
+    "authority inheritance → authority"
+  ],
+  "permitted_delegation_types": [],
+  "delegation_note": "For the current constitutional version NO CONSTITUTIONALLY AUTHORIZED DELEGATION TYPE EXISTS → VALID_DELEGATION_VERIFICATION = FALSE → AUTHORITY TRANSITION = DENY. The enforcement architecture recognizes a future delegation type if and only if that delegation type is subsequently added to a human-ratified constitutional version. No delegation types are invented.",
+  "evidence_vocabulary": {
+    "PASS": "the specific test condition passed.",
+    "VERIFIED": "a defined verification activity established the result.",
+    "QUALIFIED": "applicable qualification criteria were satisfied.",
+    "AUTHORIZED": "a valid authority transition exists.",
+    "NOT_MEASURED": "the property has not been established by the required measurement.",
+    "separation": "These labels are NOT interchangeable. A passing test does not itself create authority. Qualification does not itself create human authorization."
+  },
+  "forbidden_transitions": ["NOT_MEASURED → PASS (silent upgrade)", "PASS → VERIFIED without a defined verification activity", "VERIFIED → QUALIFIED without applicable qualification criteria", "QUALIFIED → AUTHORIZED without a valid authority transition"],
+  "assurance_chain": ["ARCHITECTURE", "IMPLEMENTATION", "TEVV", "QUALIFICATION", "HUMAN RATIFICATION"],
+  "tevv_required_attacks": [
+    "forged evidence",
+    "forged verification",
+    "forged qualification",
+    "fabricated human approval",
+    "caller-controlled authorization flags",
+    "unauthorized delegation",
+    "authority inheritance through composition",
+    "privilege escalation",
+    "self-authorization",
+    "capability escalation followed by attempted authority escalation",
+    "compromised constituent component",
+    "router/policy disagreement",
+    "alternate API/code paths",
+    "direct state mutation",
+    "reserved-authority invocation",
+    "stale/replayed delegation",
+    "malformed delegation",
+    "evidence substitution",
+    "qualification bypass",
+    "serialized/database/API state escalation"
+  ],
+  "implementation_sequence": ["ARCHITECTURE", "IMPLEMENTATION", "TEVV", "QUALIFICATION", "HUMAN RATIFICATION"],
+  "ratification": {
+    "human_ratification": "[HUMAN_RATIFICATION_PENDING] This constitution is stored verbatim from the owner-provided frozen doctrine; formal human ratification inside this application has not occurred and is recorded nowhere.",
+    "amendment_rule": "Delegation types enter ONLY via a new frozen version of this artifact with a new SHA-256 anchor — never through application logic."
+  }
+}

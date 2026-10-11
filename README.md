@@ -1,36 +1,70 @@
-# Project System of Systems Complete
+# Getting Started with Create React App
 
-**Project owner / author:** Evan Ketchum  
-**Copyright:** © 2026 Evan Ketchum. All rights reserved.  
-**License:** Proprietary — see [LICENSE](LICENSE).  
-**IP notices:** See [COPYRIGHT.md](COPYRIGHT.md), [TRADEMARKS.md](TRADEMARKS.md), and [PATENT-NOTICE.md](PATENT-NOTICE.md).
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Repository purpose
+## Available Scripts
 
-This repository is intended to consolidate the Project System of Systems source materials, architecture records, documentation, tests, and review artifacts into a provenance-aware package for independent technical review.
+In the project directory, you can run:
 
-## Review and provenance status
+### `npm start`
 
-The repository was created as a separate destination for this project. The source files and evidence package must be inventoried and transferred from the actual source materials before this repository can be described as a complete source export.
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-No source file, test result, hash, integration, security property, or qualification result should be treated as verified solely because it is described in documentation. The source export should include a manifest recording each included file, its origin, and any verification status.
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-## Constitutional invariant
+### `npm test`
 
-**CAPABILITY ≠ EVIDENCE ≠ VERIFICATION ≠ QUALIFICATION ≠ AUTHORITY**
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-Human Authority is external to the software system. Software, AI models, tools, tests, evidence records, and qualification results do not become Human Authority or self-authorize.
+### `npm run build`
 
-## Source-package status
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-**Source package status: NOT YET INVENTORIED IN THIS REPOSITORY.**
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-Do not treat this repository as a complete export until the source files, manifests, supporting documentation, and hashes have been transferred and checked.
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-## Third-party materials
+### `npm run eject`
 
-Any third-party software, dependencies, documentation, or other materials remain subject to their respective owners' rights and licenses. Their inclusion does not transfer ownership to this project.
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-## Important notice
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-These notices record the project owner's stated position; they do not constitute legal advice, a trademark registration, a patent filing, or a copyright registration. See the individual notice files for limitations and status.
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

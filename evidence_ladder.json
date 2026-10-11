@@ -1,0 +1,23 @@
+{
+  "levels": [
+    { "level": "E0", "placeholder": true, "definition": "[AUTHORITATIVE_DEFINITION_PENDING] E0 will be defined by the authoritative project documentation. This package asserts no interpretation.", "display_name": "E0" },
+    { "level": "E1", "placeholder": true, "definition": "[AUTHORITATIVE_DEFINITION_PENDING] E1 will be defined by the authoritative project documentation. This package asserts no interpretation.", "display_name": "E1" },
+    { "level": "E2", "placeholder": true, "definition": "[AUTHORITATIVE_DEFINITION_PENDING] E2 will be defined by the authoritative project documentation. This package asserts no interpretation.", "display_name": "E2" },
+    { "level": "E3", "placeholder": true, "definition": "[AUTHORITATIVE_DEFINITION_PENDING] E3 will be defined by the authoritative project documentation. This package asserts no interpretation.", "display_name": "E3" },
+    { "level": "E4", "placeholder": true, "definition": "[AUTHORITATIVE_DEFINITION_PENDING] E4 will be defined by the authoritative project documentation. This package asserts no interpretation.", "display_name": "E4" },
+    { "level": "E5", "placeholder": true, "definition": "[AUTHORITATIVE_DEFINITION_PENDING] E5 will be defined by the authoritative project documentation. This package asserts no interpretation.", "display_name": "E5" },
+    { "level": "NOT_MEASURED", "placeholder": false, "definition": "No measurement exists. NOT_MEASURED is a first-class status: it is displayed honestly, never rendered as PASS, and never upgraded without real evidence.", "display_name": "NOT_MEASURED" }
+  ],
+  "rules": [
+    "NOT_MEASURED must never be promoted to PASS.",
+    "No evidence level may be upgraded without a recorded measurement and provenance.",
+    "E0 → E2, E2 → E3, E3 → E4, E4 → E5: forbidden without real supporting evidence.",
+    "No evidence level implies QUALIFIED.",
+    "Capability does not imply evidence. Evidence does not imply verification. Verification does not imply qualification. None of them imply authority.",
+    "Historical results are labeled historical; current reproducible results are labeled current. They are never mixed.",
+    "Every evidence record carries a SHA-256 hash and provenance fields.",
+    "If a service is unavailable, the system reports UNAVAILABLE / NOT_CONFIGURED / NOT_MEASURED / BLOCKED — never a simulated success.",
+    "Lifecycle order is enforced in code: EXECUTION → EVIDENCE → REPRODUCTION → VERIFICATION → QUALIFICATION → HUMAN_RATIFICATION. Transitions cannot skip gates, and caller-supplied approval flags (human_approved, verified, qualified, force) are structurally ignored.",
+    "The public application never mutates registry statuses; recorded transitions are provenance for the authoritative owner only."
+  ]
+}
