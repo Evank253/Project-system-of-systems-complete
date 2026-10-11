@@ -1,0 +1,9 @@
+{
+  "name": "KETCHUM-SOS",
+  "version": "0.1.0",
+  "release_channel": "development",
+  "package": "public infrastructure layer (landing + API + connectors + evidence + docs)",
+  "authoritative_systems": ["KCN", "MANIFEX", "KSI", "TEVV", "ARENA", "Independent Witness"],
+  "rule": "The public application is an interface layer. It never replaces, rewrites, or redefines the underlying systems.",
+  "data_policy": "No fabricated data. Unfinished components are marked. Placeholders in [BRACKETS] await authoritative data."
+}

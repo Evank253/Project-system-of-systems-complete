@@ -1,0 +1,22 @@
+[
+  { "slug": "readme", "file": "README.md", "title": "README — Package Overview", "status": "IMPLEMENTED" },
+  { "slug": "base44-master-prompt", "file": "BASE44-MASTER-PROMPT.md", "title": "Base44 Master Build Prompt", "status": "IMPLEMENTED" },
+  { "slug": "system-architecture", "file": "SYSTEM-ARCHITECTURE.md", "title": "System Architecture", "status": "IMPLEMENTED" },
+  { "slug": "api-specification", "file": "API-SPECIFICATION.md", "title": "API Specification", "status": "IMPLEMENTED" },
+  { "slug": "data-model", "file": "DATA-MODEL.md", "title": "Data Model", "status": "IMPLEMENTED" },
+  { "slug": "evidence-model", "file": "EVIDENCE-MODEL.md", "title": "Evidence Model (E0–E5)", "status": "INTEGRATION_REQUIRED" },
+  { "slug": "authority-model", "file": "AUTHORITY-MODEL.md", "title": "Authority Model (H0–H3)", "status": "INTEGRATION_REQUIRED" },
+  { "slug": "tevv-model", "file": "TEVV-MODEL.md", "title": "TEVV Methodology", "status": "TEST_REQUIRED" },
+  { "slug": "security-requirements", "file": "SECURITY-REQUIREMENTS.md", "title": "Security Requirements", "status": "TEST_REQUIRED" },
+  { "slug": "deployment-spec", "file": "DEPLOYMENT-SPEC.md", "title": "Deployment Specification", "status": "TEST_REQUIRED" },
+  { "slug": "ui-spec", "file": "UI-SPEC.md", "title": "UI Specification", "status": "IMPLEMENTED" },
+  { "slug": "test-matrix", "file": "TEST-MATRIX.md", "title": "Test Matrix", "status": "TEST_REQUIRED" },
+  { "slug": "acceptance-gates", "file": "ACCEPTANCE-GATES.md", "title": "Acceptance Gates", "status": "TEST_REQUIRED" },
+  { "slug": "completion-matrix", "file": "COMPLETION-MATRIX.md", "title": "Completion Matrix", "status": "IMPLEMENTED" },
+  { "slug": "ai-interface", "file": "AI-INTERFACE.md", "title": "AI Interface Layer", "status": "IMPLEMENTED" },
+  { "slug": "lifecycle-enforcement", "file": "LIFECYCLE-ENFORCEMENT.md", "title": "Lifecycle Enforcement & Evidence Integrity", "status": "IMPLEMENTED" },
+  { "slug": "how-to-inspect", "file": "HOW-TO-INSPECT.md", "title": "How to Inspect (External Verifiers)", "status": "IMPLEMENTED" },
+  { "slug": "eil-constitution", "file": "EIL-CONSTITUTION.md", "title": "EIL Constitution (Frozen Doctrine)", "status": "IMPLEMENTED" },
+  { "slug": "external-tevv-package", "file": "EXTERNAL-TEVV-PACKAGE.md", "title": "External TEVV Package (Independent Evaluation)", "status": "IMPLEMENTED" },
+  { "slug": "research-notes", "file": "RESEARCH-NOTES.md", "title": "Research Notes", "status": "INTEGRATION_REQUIRED" }
+]

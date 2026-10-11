@@ -1,0 +1,118 @@
+{
+  "project_title": "KETCHUM SYSTEM-OF-SYSTEMS — Human-Governed Intelligence Infrastructure",
+  "theme": "dark_engineering_control_center",
+  "color_archetype": "TACTICAL_MINIMALISM_DARK_OBSIDIAN",
+  "colors": {
+    "background": "#070A0F",
+    "surface_base": "#0B0F17",
+    "surface_card": "#101622",
+    "surface_hover": "#161E2E",
+    "border_subtle": "#1B2436",
+    "border_strong": "#2A364F",
+    "text_primary": "#F1F5F9",
+    "text_secondary": "#94A3B8",
+    "text_muted": "#64748B",
+    "brand_cyan": "#38BDF8",
+    "brand_blue": "#2563EB",
+    "status_emerald": "#10B981",
+    "status_amber": "#F59E0B",
+    "status_crimson": "#EF4444",
+    "status_slate": "#64748B"
+  },
+  "typography": {
+    "font_family_heading": "Outfit, Cabinet Grotesk, sans-serif",
+    "font_family_body": "IBM Plex Sans, Inter, sans-serif",
+    "font_family_mono": "JetBrains Mono, Source Code Pro, monospace",
+    "heading_h1": "text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-slate-100",
+    "heading_h2": "text-2xl sm:text-3xl lg:text-4xl font-semibold tracking-tight text-slate-100",
+    "heading_h3": "text-xl sm:text-2xl font-medium tracking-tight text-slate-200",
+    "overline": "font-mono text-xs uppercase tracking-[0.2em] text-sky-400 font-semibold",
+    "code_block": "font-mono text-xs leading-relaxed text-slate-300 bg-[#070A0F] border border-slate-800 p-4 rounded-md"
+  },
+  "spacing_and_layout": {
+    "section_padding": "py-20 px-4 sm:px-6 lg:px-12",
+    "container_max_width": "max-w-7xl mx-auto",
+    "grid_gap": "gap-6 lg:gap-8",
+    "card_padding": "p-6 sm:p-8",
+    "header_height": "h-16 sm:h-20",
+    "bento_strategy": "MODE B - High Density Engineering Grid with tactical 1px borders, subtle status top accents, and monospace headers."
+  },
+  "visual_enhancers": {
+    "background_grid": "bg-[linear-gradient(to_right,#1b243615_1px,transparent_1px),linear-gradient(to_bottom,#1b243615_1px,transparent_1px)] bg-[size:4rem_4rem]",
+    "header_glass": "bg-[#070A0F]/85 backdrop-blur-xl border-b border-[#1B2436] sticky top-0 z-50",
+    "card_top_accent": "relative before:absolute before:top-0 before:left-0 before:right-0 before:h-[2px]",
+    "telemetry_badge": "inline-flex items-center gap-2 px-2.5 py-1 rounded text-xs font-mono font-medium border",
+    "invariant_marquee": "slow drifting ribbon with low-contrast slate text on dark background displaying: CAPABILITY ≠ EVIDENCE ≠ VERIFICATION ≠ QUALIFICATION ≠ AUTHORITY"
+  },
+  "motion_and_interactions": {
+    "hover_transition": "transition-all duration-200 ease-out",
+    "motion_library": "framer-motion for tab switching, evidence ladder expansion, live test execution stream, and dialog drawers",
+    "micro_interactions": "pulsing status dots for live telemetry, active filter highlight, copy-to-clipboard status feedback, live test status state transitions"
+  },
+  "image_urls": {
+    "hero_control_room": "https://images.unsplash.com/photo-1648611648035-805e9ae87437?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzNDR8MHwxfHNlYXJjaHwxfHxzZXJ2ZXIlMjB0ZWxlbWV0cnklMjBkYXRhJTIwaW5mcmFzdHJ1Y3R1cmUlMjBjb250cm9sJTIwcm9vbXxlbnwwfHx8Ymx1ZXwxNzkxNDA3MTQzfDA&ixlib=rb-4.1.0&q=85",
+    "datacenter_racks": "https://images.unsplash.com/photo-1570402290298-143753dadf0e?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzNDR8MHwxfHNlYXJjaHw0fHxzZXJ2ZXIlMjB0ZWxlbWV0cnklMjBkYXRhJTIwaW5mcmFzdHJ1Y3R1cmUlMjBjb250cm9sJTIwcm9vbXxlbnwwfHx8Ymx1ZXwxNzkxNDA3MTQzfDA&ixlib=rb-4.1.0&q=85",
+    "hardware_telemetry": "https://images.unsplash.com/photo-1717386255785-59c670564341?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzNDR8MHwxfHNlYXJjaHwzfHxzZXJ2ZXIlMjB0ZWxlbWV0cnklMjBkYXRhJTIwaW5mcmFzdHJ1Y3R1cmUlMjBjb250cm9sJTIwcm9vbXxlbnwwfHx8Ymx1ZXwxNzkxNDA3MTQzfDA&ixlib=rb-4.1.0&q=85"
+  },
+  "key_sections": [
+    {
+      "id": "hero",
+      "name": "Landing Hero & Status Command Strip",
+      "requirements": "Communicates title KETCHUM SYSTEM-OF-SYSTEMS / Human-Governed Intelligence Infrastructure. Live status indicators: SYSTEM STATUS → LIVE, EVIDENCE → E0–E5, AUTHORITY → HUMAN CONTROLLED, and primary button [ RUN TEST ]. Displays invariant marquee immediately underneath."
+    },
+    {
+      "id": "architecture",
+      "name": "Subsystem Architecture Map",
+      "requirements": "Interactive overview of 8 core subsystems: KCN (Cognitive Network), MANIFEX (Engineering OS), KSI (Human Authority), TEVV (Test/Evaluation), Evidence & Provenance, Connectors, Deployment, Security Governance. Clickable nodes with data flows."
+    },
+    {
+      "id": "registry",
+      "name": "Filterable System Registry",
+      "requirements": "Explorer with status filter (IMPLEMENTED, INTEGRATION_REQUIRED, TEST_REQUIRED, VERIFICATION_REQUIRED, QUALIFICATION_REQUIRED, NOT_MEASURED, BLOCKED). Clicking a component opens detail drawer with explicit fields: [SOURCE_REPOSITORY], [COMMIT_HASH], [API_ENDPOINT], [EVIDENCE_RECORD]."
+    },
+    {
+      "id": "live-test",
+      "name": "Live Backend Test Runner",
+      "requirements": "Real execution suite invoking FastAPI `/api/test/run` endpoints. Returns real state machine outcomes: UNAVAILABLE, NOT_CONFIGURED, NOT_MEASURED, BLOCKED, or SUCCESS with timing and response payloads."
+    },
+    {
+      "id": "evidence",
+      "name": "Evidence Explorer (E0–E5 Ladder)",
+      "requirements": "Displays E0 (Unmeasured/Assertion) through E5 (Formal Mathematical Proof & Audit) ladder. NOT_MEASURED is a first-class citizen with no fake claims. Includes strict upgrade rule documentation."
+    },
+    {
+      "id": "authority",
+      "name": "Human Governance Authority Model (H0–H3)",
+      "requirements": "Explains H0 (Autonomous sandbox) to H3 (Immutable Human Sign-off required). Interactive delegation, authorization check, and revocation audit trail visualizer."
+    },
+    {
+      "id": "tevv",
+      "name": "TEVV Pipeline & Telemetry",
+      "requirements": "Test, Evaluation, Verification & Validation pipeline visualization showing automated suite stages, gate checks, and pass/fail thresholds."
+    },
+    {
+      "id": "docs",
+      "name": "System Spec Documentation Reader",
+      "requirements": "Fetches and renders real technical markdown specification documents served by FastAPI backend (`/api/docs/{doc_id}`)."
+    }
+  ],
+  "instructions_to_main_agent": {
+    "testing_requirement": "CRITICAL: Add data-testid to every button, input, navigation tab, filter badge, status card, modal close button, and key metric block. Use kebab-case e.g. data-testid='hero-run-test-btn', data-testid='registry-filter-implemented', data-testid='component-card-kcn-core'.",
+    "backend_integration": "Implement FastAPI backend endpoints in `/app/backend/server.py` for `/api/system/registry`, `/api/test/run`, `/api/evidence`, `/api/authority`, `/api/docs` and serve real JSON data with explicit status states.",
+    "frontend_components": "Use custom Tailwind structure for page layout and Shadcn components (Dialog, Drawer, Select, Tabs, Badge, Command, Table, Accordion, Tooltip) heavily styled to match the dark obsidian engineering aesthetic.",
+    "anti_slop_rule": "Do not add cheesy sci-fi hacker rain or bright pink/neon glow effects. Maintain high-density engineering rigor, clean monospace callouts, precise borders, clear status badges, and inspectable evidence objects."
+  },
+  "UNIVERSAL GUIDELINES FOR MAIN AGENT": [
+    "Dark colors look good when used independently without gradients. DO NOT use dark colors as gradients.",
+    "Do not make generic centered layouts, simplistic gradients, and uniform styling.",
+    "Create depth through layered design elements with z-index hierarchy.",
+    "Use glass-morphism effects with backdrop filters (12-24px blur).",
+    "You MUST NOT apply universal transition (e.g., transition: all). Always add transitions for specific interactive elements.",
+    "You MUST NOT center align the app container in CSS.",
+    "Always use modern dark engineering control center button styles with status indicators.",
+    "NEVER use AI assistant emoji characters like 🤖🧠💭💡 for icons. Use lucide-react engineering icons.",
+    "Every interaction needs micro-animations - hover states, status transitions, clean entrance animations.",
+    "Use 2-3x more spacing than typical designs to give breathing room.",
+    "All interactive and key informational elements MUST include a data-testid attribute to facilitate robust automated testing."
+  ]
+}
